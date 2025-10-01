@@ -1,35 +1,76 @@
-# Projeto Conta Corrente em C#
+ï»¿# ðŸ’³ Conta Corrente em C#
 
-## Descrição
-Este projeto é uma aplicação simples em **C#** que simula o gerenciamento de contas correntes.  
-Ele permite criar uma pessoa com dados pessoais, associar uma conta corrente, e realizar operações básicas como depósito, saque e consulta de saldo.
-
-O projeto é ideal para **estudantes de C#** que querem praticar **POO (Programação Orientada a Objetos)**, encapsulamento, classes, métodos e propriedades.
+Um projeto simples em **C# .NET** que simula o cadastro de uma pessoa com conta corrente e permite realizar operaÃ§Ãµes bancÃ¡rias bÃ¡sicas.
 
 ---
 
-## Funcionalidades
+## ðŸš€ Como Executar
 
-- Criar uma pessoa com os seguintes dados:
-  - Nome
-  - CPF
-  - Data de nascimento
-  - Status (ativo/inativo)
-- Criar uma conta corrente associada à pessoa:
-  - Número da conta
-  - Saldo inicial
-- Operações na conta:
-  - Depositar valores
-  - Sacar valores
-  - Consultar saldo
-- Exibir os dados completos da pessoa e da conta
+Clone este repositÃ³rio:
+
+```bash
+git clone https://github.com/seu-usuario/ContaCorrenteCSharp.git
+cd ContaCorrenteCSharp
+```
+
+Compile e execute o projeto:
+
+```bash
+dotnet run
+```
 
 ---
 
-## Tecnologias Utilizadas
+## ðŸ“– Fluxo do Programa
 
-- Linguagem: **C#**
-- Plataforma: **.NET 6/7/8** (console application)
-- IDE recomendada: **Visual Studio 2022**
+1. O usuÃ¡rio deve cadastrar uma **Pessoa** informando:
+   - **Nome** (nÃ£o pode ser vazio)
+   - **CPF** (nÃ£o pode ser vazio)
+   - **Data de nascimento** (validada no formato `dd/MM/yyyy`)
+   - **Status** (1 = Ativo, 2 = Inativo)
+   - **NÃºmero da conta** (inteiro)
+   - **Saldo inicial** (decimal)
+
+2. ApÃ³s o cadastro, o sistema exibe um **menu interativo** com as opÃ§Ãµes:
+
+```text
+=== Menu ===
+1. Depositar
+2. Sacar
+3. Exibir Saldo
+4. Exibir Dados da Conta
+5. Sair
+```
+
+3. O usuÃ¡rio pode realizar operaÃ§Ãµes atÃ© escolher a opÃ§Ã£o **Sair**.
+
+---
+
+## ðŸ’» Exemplo de Uso
+
+```yaml
+=== Cadastro de Pessoa ===
+Nome: JoÃ£o Silva
+CPF: 123.456.789-00
+Data de Nascimento (dd/MM/yyyy): 15/05/1990
+Status:
+  Digite 1 para ativo e 2 para inativo
+Digite: 1
+NÃºmero da Conta: 1001
+Saldo Inicial: 1500
+
+=== Menu ===
+1. Depositar
+2. Sacar
+3. Exibir Saldo
+4. Exibir Dados da Conta
+5. Sair
+```
+
+---
+
+## ðŸ“œ LicenÃ§a
+
+Este projeto Ã© apenas para fins **educacionais** e nÃ£o possui licenÃ§a comercial.
 
 ---

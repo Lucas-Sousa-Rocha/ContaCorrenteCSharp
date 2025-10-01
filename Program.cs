@@ -7,7 +7,6 @@ class Program
     {
         Pessoa pessoa = new Pessoa();
 
-        // ===== Cadastro da Pessoa =====
         Console.WriteLine("=== Cadastro de Pessoa ===");
         Console.Write("Nome: ");
         string nome = Console.ReadLine();
